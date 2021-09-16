@@ -25,7 +25,7 @@ const server = http.createServer((req, res) => {
     req.on("end", () => {
       const parsedBody = Buffer.concat(body).toString();
       const message = parsedBody.split("=")[1];
-      fs.writeFileSync("message.txt", message);
+      fs.writeFileSync("udemy-node-1/message.txt", message);
     });
     res.statusCode = 302;
     res.setHeader("Location", "/");
