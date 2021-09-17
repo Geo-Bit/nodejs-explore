@@ -1,5 +1,3 @@
-//test comment from mac
-
 const http = require("http");
 const fs = require("fs");
 
@@ -24,14 +22,17 @@ const server = http.createServer((req, res) => {
       console.log(chunk);
       body.push(chunk);
     }); //fired whenever a new chunk is ready to be read
-    req.on("end", () => {
+    return req.on("end", () => {
       const parsedBody = Buffer.concat(body).toString();
       const message = parsedBody.split("=")[1];
-      fs.writeFileSync("udemy-node-1/message.txt", message);
+      //will wait for file write before proceeding (bad)
+      //fs.writeFileSync("udemy-node-1/message.txt", message);
+      fs.writeFile("udemy-node-1/message.txt", message, (err) => {
+        res.statusCode = 302;
+        res.setHeader("Location", "/");
+        return res.end();
+      });
     });
-    res.statusCode = 302;
-    res.setHeader("Location", "/");
-    return res.end();
   }
   res.setHeader("Content-Type", "text/html");
   res.write("<html>");
