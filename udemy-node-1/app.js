@@ -6,6 +6,7 @@ const bodyParser = require("body-parser");
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
+//test
 
 app.use("/add-product", (req, res, next) => {
   res.send(
