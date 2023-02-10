@@ -1,5 +1,5 @@
 {
-  "name": "node-handlebars",
+  "name": "node-pug",
   "version": "1.0.0",
   "description": "Udemy Node Course",
   "main": "app.js",

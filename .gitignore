@@ -1,2 +1,4 @@
+node-handlebars/node_modules/
+node-ejs/node_modules/
 node-pug/node_modules/
 .DS_Store
