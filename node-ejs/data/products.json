@@ -1,1 +1,9 @@
-[{"title":"First Book","imageUrl":"https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/The_Colour_of_Magic_%28cover_art%29.jpg/220px-The_Colour_of_Magic_%28cover_art%29.jpg","description":"Discworld","price":"10"}]
+[
+    {
+        "id": "12345",
+        "title": "First Book",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/The_Colour_of_Magic_%28cover_art%29.jpg/220px-The_Colour_of_Magic_%28cover_art%29.jpg",
+        "description": "Discworld",
+        "price": "10"
+    }
+]
