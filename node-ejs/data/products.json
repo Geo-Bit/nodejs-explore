@@ -5,5 +5,12 @@
         "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/The_Colour_of_Magic_%28cover_art%29.jpg/220px-The_Colour_of_Magic_%28cover_art%29.jpg",
         "description": "Discworld",
         "price": "10"
+    },
+    {
+        "title": "Another Product",
+        "imageUrl": "https://i.pinimg.com/originals/ad/82/e3/ad82e3ba683fe6ee0cbd2ec9371f130b.jpg",
+        "description": "Another Discworld book",
+        "price": "8.99",
+        "id": "0.34390562736966546"
     }
 ]
